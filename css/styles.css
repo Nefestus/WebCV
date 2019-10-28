@@ -30,9 +30,9 @@ h1, h2, h3 {
     padding: 2rem 0 0 0;
 }
 .anchor {
-    margin-top: -2.7rem; /* height of nav, in this case 54px */
+    margin-top: -2.7rem; /* height of nav*/
     display: block;
-    height: 2.7rem; /* height of nav, in this case 54px */
+    height: 2.7rem; /* height of nav*/
     visibility: hidden;
 }
 .bg-nav {
@@ -99,6 +99,17 @@ a.nav-item-custom {
     color: var(--h1-color);
     margin-left: 5%;
     margin-right: 5%;
+}
+@media (max-width: 540px) {
+    .head h1 {
+        font-size: 4rem;
+    }
+    .head h3 {
+        font-size: 1.5rem;
+    }
+    .nav-item-custom {
+        font-size: 1.1rem;
+    }
 }
 .bg-about {
     background-color: var(--main-bg-color);
