@@ -7,169 +7,446 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Personal page of RJ">
     <meta name="author" content="RJ">
-    <title>Personal Page of RJ</title>
+    <title>Profile Page of RJ</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="head container">
-        <h1>Greetings, I am Raivis.</h1>
-        <h3>And welcome to my web CV.</h3>
+    <div class="bg-nav" id="nav">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="px-0 col-xl-8 col-lg-9 col-md-11">
+                    <nav class="navbar navbar-expand navbar-custom">
+                        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon" style="color: white"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav text-right w-100 justify-content-around">
+                                <a class="nav-item nav-item-custom active" href="#home">Home</a>
+                                <a class="nav-item nav-item-custom" href="#about">About</a>
+                                <a class="nav-item nav-item-custom" href="#experience">Experience</a>
+                                <a class="nav-item nav-item-custom" href="#skills">Skills</a>
+                                <a class="nav-item nav-item-custom" href="#work">Work</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="about">
-        <h2>About me</h2>
-        <table class="content-table">
-            <tr>
-                <td class="img-cell">
-                    <img src="images/rj.jpg" alt="rj">
-                    <p><img src="icons/linkedin.png" class="icon"><a href="https://www.linkedin.com/in/raivisj/">www.linkedin.com</a></p>
-                    <p><img src="icons/gmail.png" class="icon"><a href="mailto:raivis.joksts@gmail.com">raivis.joksts@gmail.com</a></p>
-                </td>
-                <td class="text-cell">
-                    <p>I am 36 years old, happily married, father of three, and recently switched careers back into
+
+    <div class="head div-common" id="home">
+        <div class="container">
+            <div class="row row-center">
+                <div class="col-sm-12">
+                    <img class="portrait" src="images/rj.jpg" alt="rj">
+                    <h1>Greetings, I'm Raivis.</h1>
+                    <br>
+                    <h3>And welcome to my profile page.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <span class="anchor" id="about"></span>
+    <div class="bg-about div-common">
+        <div class="container">
+            <div class="row justify-content-center">
+                <button class="btn col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10 p-0" type="button"
+                    data-toggle="collapse" data-target="#collapseAbout" aria-expanded="true"
+                    aria-controls="collapseAbout">
+                    <span class="h2-accordeon">
+                        <h2>About me</h2>
+                    </span>
+                </button>
+            </div>
+            <div id="collapseAbout" class="collapse show">
+                <div class="row justify-content-center">
+                    <p class="px-0 col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10 emphasized">
+                        <br>
+                        From technology to business and back</p>
+                    <p class="px-0 col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10">
+                        I am a business developer, product manager and a software engineer.
+                    </p>
+                    <p class="px-0 col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10">
+                        Now 36 years old, happily married, father of three, and recently switched careers back
+                        into
                         software development from a
                         10 year career in sales and product marketing.</p>
-                    <p>A long time ago I started out as a Data Engineer while in the middle
+                    <p class="px-0 col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10">A long time ago I started out as a
+                        Data Engineer while in the middle
                         of my B.Sc. in Computer Sciences studies, however my professional journey has led me to
                         increasingly more
                         business
                         and customer facing roles.</p>
-                    <p>I ended up managing sales and marketing of card payment processing solutions for banks in Africa.
+                    <p class="px-0 col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10">I ended up managing sales and Marketing
+                        of card payment processing solutions for banks
+                        in
+                        Africa.
                         It was a
                         fun,
-                        thrilling but personally taxing ride, until I finally decided It's enough, and what I really want
-                        is to
-                        create digital
-                        products myself.</p>
-                    <p>I have since toyed with game development in C# and Unity, created Machine Learning models in
+                        thrilling but personally taxing ride, until I finally decided It's enough, and what I
+                        really want is to create digital products myself.</p>
+                    <p class="px-0 col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10 emphasized">
+                        Going back to roots</p>
+                    <p class="px-0 col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10">I have since toyed with game
+                        development in C# and Unity, created Machine Learning models
+                        in
                         Python, done
-                        a bit of test automation, fixed bugs in financial reports written in XSLT, remembered how to
+                        a bit of test automation, fixed bugs in financial reports written in XSLT, remembered
+                        how to
                         write SQL, and
-                        finally came to learning web
-                        development- which I found myself enjoying quite a bit.</p>
-                    </td>
-                </td>
-            </tr>
-        </table>
+                        finally came to learning web development, which I found myself enjoying quite a bit.</p>
+                    <p class="px-0 col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10 emphasized">
+                        Got an interesting project?</p>
+                    <p class="px-0 col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10">I am available for either full-time or
+                        freelance / remote work in web-dev, game-dev, data-viz or other creative digital media. Please
+                        get in touch:
+                        <a href="https://www.linkedin.com/in/raivisj/"><img src="icons/linkedin.png" class="icon"></a>
+                        <a href="mailto:raivis.joksts@gmail.com"><img src="icons/gmail.png" class="icon"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="experience">
-        <h2>Experience</h2>
-        <table class="content-table">
-            <tr>
-                <td class="exp-item">
-                    <h4>Tieto</h4>
-                    <p>May 2019 - present</p><p><a href="http://www.tieto.com">www.tieto.com</a></p>
-                </td>
-                <td class="exp-desc">
-                    <h4>Software Developer</h4>
-                    <p>Getting back to roots – making a career shift towards software development. Updating internal
-                        specs (making sure that
-                        docs match the code), fixing small bugs (UI glitches, failing test scripts) and writing
-                        automated tests (Pytest).</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="exp-item">
-                    <h4>Tieto</h4>
-                    <p>Sep 2015 - May 2019</p><p><a href="http://www.tieto.com">www.tieto.com</a></p>
-                </td>
-                <td class="exp-desc">
-                    <h4>Senior Product Marketing Manager</h4>
-                    <p>Responsible for G2M and promotion of Tieto existing and future product and service portfolio, particularly payment
-                    instrument issuing, acquiring, mobile and national retail payment infrastructure solutions, as well as open banking
-                    solutions.</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="exp-item">
-                    <h4>Tieto</h4>
-                    <p>Sep 2008 - Sep 2015</p><p><a href="http://www.tieto.com">www.tieto.com</a></p>
-                </td>
-                <td class="exp-desc">
-                    <h4>Regional Sales Manager</h4>
-                    <p>Managed business development in Africa (a EUR 3m+ annual business). Was responsible for channel partner management, sales,
-                    marketing, and account management.</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="exp-item">
-                    <h4>ecoPayz</h4>
-                    <p>Mar 2003 - Sep 2008</p><p><a href="http://www.ecopayz.com">www.ecopayz.com</a></p>
-                </td>
-                <td class="exp-desc">
-                    <h4>Merchant Integration Manager</h4>
-                    <p>Documented new functionality requirements and worked directly with developers to implement them into production.
-                    Ensured day-to-day support and consulting of online gambling merchants. Was responsible for new merchant integration
-                    projects.</p>
-                </td>
-            </tr>
-            <tr>
-                <td class="exp-item">
-                    <h4>CTCo</h4>
-                    <p>Mar 2001 - Sep 2003</p>
-                    <p><a href="http://www.ctco.lv">www.ctco.lv</a></p>
-                </td>
-                <td class="exp-desc">
-                    <h4>Data Engineer</h4>
-                    <p>Primary tasks where application testing, system monitoring, data imports and technical support. I was using SQL extensively to create customized financial reports and investigate user-raised issues (failed logins, transaction history, declined authorizations, etc.).</p>
-                </td>
-            </tr>
-        </table>
+
+    <span class="anchor" id="experience"></span>
+    <div class="bg-exp div-common">
+        <div class="container">
+            <div class="row justify-content-center">
+                <button class="btn col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10 p-0" type="button"
+                    data-toggle="collapse" data-target="#collapseExp" aria-expanded="true" aria-controls="collapseExp">
+                    <span class="h2-accordeon">
+                        <h2>Experience</h2>
+                    </span>
+                </button>
+            </div>
+            <div id="collapseExp" class="collapse show">
+                <div class="row justify-content-center mt-5">
+                    <section class="px-0 col-xl-3 col-lg-3 col-md-4 col-sm-3 col-10">
+                        <h4>May 2019 - present</h4>
+                        <a href="http://www.tieto.com"><img class="logo" src="images/tieto.jpg" alt="Tieto logo"></a>
+                    </section>
+                    <section class="px-0 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-10">
+                        <h4>Software Developer</h4>
+                        <p class="mb-5">Currently working in Processing domain - contributing to
+                            software modules that deal with transaction clearing file format conversions. Updating
+                            internal specs (making sure that
+                            docs (Markdown) match the code (C++), fixing small bugs (UI and reporting glitches in
+                            JavaScript and XSLT), and writing
+                            and updating automated tests (Python/Pytest with some occasional SQL).</p>
+                    </section>
+                    <div class="w-100"></div>
+                    <section class="px-0 col-xl-3 col-lg-3 col-md-4 col-sm-3 col-10">
+                        <h4>Sep 2015 - May 2019</h4>
+                        <a href="http://www.tieto.com"><img class="logo" src="images/tieto.jpg" alt="Tieto logo"></a>
+                    </section>
+                    <section class="px-0 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-10">
+                        <h4>Senior Product Marketing Manager</h4>
+                        <p class="mb-5">Responsible for G2M and promotion of Tieto existing and future product and
+                            service portfolio,
+                            particularly payment
+                            instrument issuing, acquiring, mobile and national retail payment infrastructure solutions,
+                            as
+                            well as open banking
+                            solutions.</p>
+                    </section>
+                    <div class="w-100"></div>
+                    <section class="px-0 col-xl-3 col-lg-3 col-md-4 col-sm-3 col-10">
+                        <h4>Sep 2008 - Sep 2015</h4>
+                        <a href="http://www.tieto.com"><img class="logo" src="images/tieto.jpg" alt="Tieto logo"></a>
+                    </section>
+                    <section class="px-0 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-10">
+                        <h4>Regional Sales Manager</h4>
+                        <p class="mb-5">Managed business development in Africa (a EUR 3m+ annual business). Was
+                            responsible for channel
+                            partner management, sales,
+                            marketing, and account management.</p>
+                    </section>
+                    <div class="w-100"></div>
+                    <section class="px-0 col-xl-3 col-lg-3 col-md-4 col-sm-3 col-10">
+                        <h4>Mar 2003 - Sep 2008</h4>
+                        <a href="http://www.ecopayz.com"><img class="logo" src="images/ecopayz.png"
+                                alt="ecoPayz logo"></a>
+                    </section>
+                    <section class="px-0 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-10">
+                        <h4>Merchant Integration Manager</h4>
+                        <p class="mb-5">Documented new functionality requirements and worked directly with developers to
+                            implement them
+                            into production.
+                            Ensured day-to-day support and consulting of online gambling merchants. Was responsible for
+                            new
+                            merchant integration
+                            projects.</p>
+                    </section>
+                    <div class="w-100"></div>
+                    <section class="px-0 col-xl-3 col-lg-3 col-md-4 col-sm-3 col-10">
+                        <h4>Mar 2003 - Sep 2008</h4>
+                        <a href="http://www.ecopayz.com"><img class="logo" src="images/ecopayz.png"
+                                alt="ecoPayz logo"></a>
+                    </section>
+                    <section class="px-0 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-10">
+                        <h4>Merchant Integration Manager</h4>
+                        <p class="mb-5">Documented new functionality requirements and worked directly with developers to
+                            implement them
+                            into production.
+                            Ensured day-to-day support and consulting of online gambling merchants. Was responsible for
+                            new
+                            merchant integration
+                            projects.</p>
+                    </section>
+                    <div class="w-100"></div>
+                    <section class="px-0 col-xl-3 col-lg-3 col-md-4 col-sm-3 col-10">
+                        <h4>Mar 2001 - Sep 2003</h4>
+                        <a href="http://www.ctco.lv"><img class="logo" src="images/ctco.png" alt="c.t.co logo"></a>
+                    </section>
+                    <section class="px-0 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-10">
+                        <h4>Data Engineer</h4>
+                        <p class="mb-5">Primary tasks where application testing, system monitoring, data imports and
+                            technical support. I
+                            was using SQL extensively to create customized financial reports and investigate user-raised
+                            issues (failed logins, transaction history, declined authorizations, etc.).</p>
+                    </section>
+                    <div class="w-100"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="skills">
-        <h2>Skills</h2>
-        <table class="content-table">
-            <tr>
-                <td class="skill-cell">
-                    <p>Python</p>
-                    <p>Pytest</p>
-                    <p>Numpy</p>
-                    <p>Sci-kit</p>
-                    <p>Pandas</p>
-                    <p>Pytorch</p>
-                    <p>Selenium</p>
-                    <p>JavaScript</p>
-                </td>
-                <td class="star-cell">
-                    <p class="stars">&#9899;&#9899;&#9899;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9899;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9899;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9899;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9899;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9898;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9898;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9898;&#9898;&#9898;</p>
-                </td>
-                <td class="skill-cell">
-                    <p>Node.js</p>
-                    <p>HTML5</p>
-                    <p>CSS3</p>
-                    <p>SQL</p>
-                    <p>C#</p>
-                    <p>Unity</p>
-                    <p>Tableau</p>
-                    <p>Git</p>
-                </td>
-                <td class="star-cell">
-                    <p class="stars">&#9899;&#9899;&#9898;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9899;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9899;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9899;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9898;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9898;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9898;&#9898;&#9898;</p>
-                    <p class="stars">&#9899;&#9899;&#9899;&#9898;&#9898;</p>
-                </td>
-            </tr>
-        </table>
+
+    <span class="anchor" id="skills"></span>
+    <div class="bg-skills div-common">
+        <div class="container">
+            <div class="row justify-content-center">
+                <button class="btn col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10 p-0" type="button"
+                    data-toggle="collapse" data-target="#collapseSkills" aria-expanded="true"
+                    aria-controls="collapseSkills">
+                    <span class="h2-accordeon">
+                        <h2>Skills</h2>
+                    </span>
+                </button>
+            </div>
+            <div id="collapseSkills" class="collapse show">
+                <div class="row justify-content-center mt-5">
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Python</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9899;&#9898;&#9898;</p>
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Numpy</p>
+                    <p class="p-0 m-0 d-xl-none col-lg-1 col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9899;&#9898;&#9898;</p>
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1"></p>
+
+                    <div class="w-100 d-md-none d-sm-block"></div>
+
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Pytest</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9899;&#9898;&#9898;</p>
+
+                    <div class="w-100 d-none d-sm-none d-md-block d-lg-block d-xl-block"></div>
+
+                    <p class="p-0 m-0 d-md-none col-sm-1 col-2"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Sci-kit</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9899;&#9898;&#9898;</p>
+
+                    <div class="w-100 d-md-none d-sm-block"></div>
+
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Pandas</p>
+                    <p class="p-0 m-0 d-xl-none col-lg-1 col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9899;&#9898;&#9898;</p>
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Pytorch</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9898;&#9898;&#9898;</p>
+
+                    <div class="w-100"></div>
+
+                    <!--  Next section  -->
+
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Selenium</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9898;&#9898;&#9898;</p>
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">JavaScript</p>
+                    <p class="p-0 m-0 d-xl-none col-lg-1 col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9898;&#9898;&#9898;</p>
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1"></p>
+
+                    <div class="w-100 d-md-none d-sm-block"></div>
+
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Node.js</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9898;&#9898;&#9898;</p>
+
+                    <div class="w-100 d-none d-sm-none d-md-block d-lg-block d-xl-block"></div>
+
+                    <p class="p-0 m-0 d-md-none col-sm-1 col-2"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">HTML5</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9899;&#9898;&#9898;</p>
+
+                    <div class="w-100 d-md-none d-sm-block"></div>
+
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">CSS3</p>
+                    <p class="p-0 m-0 d-xl-none col-lg-1 col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9899;&#9898;&#9898;</p>
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">SQL</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9899;&#9898;&#9898;</p>
+
+                    <div class="w-100"></div>
+
+                    <!--  Next section  -->
+
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">C#</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9898;&#9898;&#9898;</p>
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Unity</p>
+                    <p class="p-0 m-0 d-xl-none col-lg-1 col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9898;&#9898;&#9898;</p>
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1"></p>
+
+                    <div class="w-100 d-md-none d-sm-block"></div>
+
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Tableau</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9898;&#9898;&#9898;</p>
+
+                    <div class="w-100 d-none d-sm-none d-md-block d-lg-block d-xl-block"></div>
+
+                    <p class="p-0 m-0 d-md-none col-sm-1 col-2"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Git</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9899;&#9898;&#9898;</p>
+
+                    <div class="w-100 d-md-none d-sm-block"></div>
+
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">Bootstrap</p>
+                    <p class="p-0 m-0 d-xl-none col-lg-1 col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9899;&#9898;&#9898;</p>
+                    <p class="p-0 m-0 col-xl-1 col-lg-1 col-md-1 col-sm-1 col-2"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 text-left">jQuery</p>
+                    <p class="p-0 m-0 d-lg-none col-md-1 col-sm-1 d-none d-sm-block"></p>
+                    <p class="px-0 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 stars text-right">
+                        &#9899;&#9899;&#9898;&#9898;&#9898;</p>
+
+                    <div class="w-100"></div>
+                    <br>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <span class="anchor" id="work"></span>
+    <div class="bg-work div-common">
+        <div class="container">
+            <div class="row justify-content-center">
+                <button class="btn col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10 p-0" type="button"
+                    data-toggle="collapse" data-target="#collapseWork" aria-expanded="true"
+                    aria-controls="collapseWork">
+                    <span class="h2-accordeon">
+                        <h2>My Work</h2>
+                    </span>
+                </button>
+            </div>
+            <div id="collapseWork" class="collapse show">
+                <div class="row justify-content-center mt-5">
+                    <section class="px-0 col-xl-3 col-lg-3 col-md-4 col-sm-3 col-3">
+                        <h4>Data Science</h4>
+                        <a href="https://www.kaggle.com/oragula/learning-plotting-by-exploring-tourism-in-latvia"><img
+                                class="logo" src="images/kaggle.png" alt="Kaggle logo"></a>
+                    </section>
+                    <section class="px-0 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-7">
+                        <h4><a href="https://www.kaggle.com/oragula/learning-plotting-by-exploring-tourism-in-latvia">Data analisys and visualization</a></h4>
+                        <p class="mb-5"><a href="https://www.kaggle.com/oragula/learning-plotting-by-exploring-tourism-in-latvia">Data analisys / visualization mini-project about tourism impact on Latvian
+                            economy (Python Pandas / Matplotlib and Tableau).</a></p>
+                    </section>
+                    <div class="w-100"></div>
+                    <section class="px-0 col-xl-3 col-lg-3 col-md-4 col-sm-3 col-3">
+                        <h4>Data Science</h4>
+                        <a href="https://www.kaggle.com/oragula/modelling-trees-for-national-forest"><img
+                                class="logo" src="images/kaggle.png" alt="Kaggle logo"></a>
+                    </section>
+                    <section class="px-0 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-7">
+                        <h4><a href="https://www.kaggle.com/oragula/modelling-trees-for-national-forest">Machine learning: classification</a></h4>
+                        <p class="mb-5"><a href="https://www.kaggle.com/oragula/modelling-trees-for-national-forest">Machine learning project with sci-kit classification algorithms.</a></p>
+                    </section>
+                    <div class="w-100"></div>
+                    <section class="px-0 col-xl-3 col-lg-3 col-md-4 col-sm-3 col-3">
+                        <h4>Game Dev</h4>
+                        <a href="https://nefestus.github.io/Asteroids/"><img
+                                class="logo" src="images/unity.png" alt="Unity logo"></a>
+                    </section>
+                    <section class="px-0 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-7">
+                        <h4><a href="https://nefestus.github.io/Asteroids/">Unity: 2D Asteroids clone</a></h4>
+                        <p class="mb-5"><a href="https://nefestus.github.io/Asteroids/">Simple Asteroids clone to learn Unity basics. Arrow keys to steer, space for thrust, cntrl to shoot.</a></p>
+                    </section>
+                    <div class="w-100"></div>
+                    <section class="px-0 col-xl-3 col-lg-3 col-md-4 col-sm-3 col-3">
+                        <h4>Game Dev</h4>
+                        <a href="https://nefestus.github.io/Breakout/"><img
+                                class="logo" src="images/unity.png" alt="Unity logo"></a>
+                    </section>
+                    <section class="px-0 col-xl-5 col-lg-6 col-md-7 col-sm-8 col-7">
+                        <h4><a href="https://nefestus.github.io/Breakout/">Unity: Retro bricks clone</a></h4>
+                        <p class="mb-5"><a href="https://nefestus.github.io/Breakout/">Retro themed bricks clone made while learning Unity. Arrows to move paddle, esc to pause.</a></p>
+                    </section>
+                    <div class="w-100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="foot">
-    <h4>Disclamer</h4>
-    <p class="text-footer">This page was created with just HTML and CSS, no JavaScript, frameworks or language extensions. I
-        wanted to learn the
-        basics and also see what is possible with bare-bones web-page. Overall, I was pleasantly surprised.</p>
+        <div class="container">
+            <div class="row justify-content-center">
+                <p class="text-footer px-0 col-xl-8 col-lg-9 col-md-11 col-sm-11 col-10 text-center">
+                    Developed by RJ. Contact:
+                    <a href="https://www.linkedin.com/in/raivisj/"><img src="icons/linkedin.png" class="icon"></a>
+                    <a href="mailto:raivis.joksts@gmail.com"><img src="icons/gmail.png" class="icon"></a>
+                </p>
+            </div>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/nav_scroll.js"></script>
 </body>
+
 </html>
