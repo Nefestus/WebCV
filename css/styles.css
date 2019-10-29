@@ -100,6 +100,27 @@ a.nav-item-custom {
     margin-left: 5%;
     margin-right: 5%;
 }
+.stars-sorted {
+    padding-left: 0;
+    padding-right: 0;
+}
+.skills-sorted {
+    padding-left: 0;
+    padding-right: 0;
+}
+@media (max-width: 575px) {
+    [class*="skills-sorted"] {
+        padding-left: 5%;
+    }
+    [class*="stars-sorted"] {
+        padding-right: 5%;
+    }
+    #collapseSkills p.stars {
+        font-size: 0.5rem;
+        line-height: 1.31rem;
+        padding-top: 0.1rem;
+    }
+}
 @media (max-width: 540px) {
     .head h1 {
         font-size: 4rem;
@@ -109,6 +130,38 @@ a.nav-item-custom {
     }
     .nav-item-custom {
         font-size: 1.1rem;
+    }
+}
+@media (max-width: 375px) {
+    div p {
+        font-size: 1rem;
+    }
+    .head h1 {
+        font-size: 3.5rem;
+    }
+    .head h3 {
+        font-size: 1.1rem;
+    }
+    .nav-item-custom {
+        font-size: 1rem;
+    }
+    #collapseSkills p {
+        font-size: 1rem;
+    }
+    #collapseSkills p.stars {
+        font-size: 0.45rem;
+        line-height: 1.31rem;
+        padding-top: 0.1rem;
+    }
+    img.logo {
+        width: 60px;
+    }
+}
+@media (max-width: 320px) {
+    #collapseSkills p.stars {
+        font-size: 0.4rem;
+        line-height: 1.31rem;
+        padding-top: 0.1rem;
     }
 }
 .bg-about {
@@ -163,8 +216,6 @@ a.nav-item-custom {
 .icon {
     width: 1.2rem;
     display: inline-block;
-    margin: 0 0rem 0 0.5rem;
-    vertical-align: bottom;
 }
 h1 {
     font-size: 4.5rem;
